@@ -231,7 +231,7 @@ nav .button:last-child {
     grid-row: 1 / 3;
     grid-column: 2;
     height: 100%;
-    background-image: url('../media/profilepic.jpg');
+    background-image: url('../media/profilepic.png');
     background-size: cover;
     background-position-x: center;
     background-position-y: top;
@@ -297,7 +297,7 @@ section:last-of-type {
 .project-banner {
     height: 30rem;
     width: 100%;
-    background-image: url('../media/placeholderthumb.png');
+    background-image: url('../media/placeholder.jpg');
     background-size: cover;
     background-position: center;
 }
