@@ -63,7 +63,7 @@ main {
     margin-top: .5rem;
 }
 
-img {
+.project-card img {
     width: 100%;
 }
 
@@ -390,6 +390,7 @@ section:last-of-type {
       /* Hide the images by default */
       .mySlides {
         display: none;
+        background-color: black;
       }
       
       /* Add a pointer when hovering over the thumbnail images */
