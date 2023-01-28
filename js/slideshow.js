@@ -46,3 +46,16 @@ function showSlides(n) {
 
   captionText.innerHTML = dots[slideIndex - 1].alt;
 } 
+
+
+// Resizes images on a timer
+function resizedw(){
+  // Haven't resized in 100ms!
+  showSlides();
+}
+
+var doit;
+window.onresize = function(){
+clearTimeout(doit);
+doit = setTimeout(resizedw, 100);
+};
