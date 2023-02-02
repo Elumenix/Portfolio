@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+main{
+    width: auto;
+    max-width: 1280px;
+    box-sizing: border-box;
+    display: block;
+    line-height: 1.8em;
+    margin: 3vw auto;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+#architecture{
+    width: 50%;
+    float:right;
+    margin: 10px;
+}
