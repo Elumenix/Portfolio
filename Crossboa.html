@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='css/fonts.css'>
     <link rel='stylesheet' href='css/bootstrap-reboot.css'>
     <link rel='stylesheet' href='css/crossboa.css'>
+    <script src="js/crossboa.js"></script>
 </head>
 
 <body>
@@ -20,22 +21,19 @@
             aliquet eget sit amet tellus cras adipiscing enim eu. Et egestas quis ipsum suspendisse ultrices gravida
             dictum.</p>
 
-        <p>Luctus accumsan tortor posuere ac ut consequat. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus
-            aenean. Mauris vitae ultricies leo integer malesuada nunc. Accumsan lacus vel facilisis volutpat est velit
-            egestas dui. Pellentesque habitant morbi tristique senectus et. Risus sed vulputate odio ut enim blandit
-            volutpat maecenas volutpat. Diam donec adipiscing tristique risus nec feugiat in fermentum. Duis ultricies
-            lacus sed turpis. Sit amet volutpat consequat mauris. Amet commodo nulla facilisi nullam vehicula ipsum.
-            Quisque id diam vel quam. Porttitor leo a diam sollicitudin. Nibh praesent tristique magna sit amet purus.
-            Aliquam sem et tortor consequat id porta nibh.</p>
+        <p>"Our class architecture was well thought out, and really helped us in the early stages of the project. As this project started early in the course, we naturally learned about more features of both MonoGame and C++, so this doesn't represent what our game looked like by the end of development. Some classes were culled of content through the use of interfaces and structs, while in other cases it was decided that more specialized child objects of game classes were necessary to give more function to different objects. Such was the case with projectiles and level tiles. Very early on, we also ended up creating a Physics Manager, to round out a trio of managers to aid the game loop, with the later additions of a Stats, Sound, Spawn, and Camara managers. In retrospect we did have a pretty good idea of the complexity that each class would have, and all the functions we predicted we would need, we did need, along with a few more added to most classes for various reasons. We did have some suprises even in that regard. We expected the Collision Manger to be our largest and most complicated class, and it did come at least 2nd in that regard. The Level Manager became a monster and ended up quadrupling it's size. It would have been even larger if we didn't decide to have a separate Spawn Manager. The only part of our architecture that was removed altogether was the GameManager class, as all of it's contents ended up being either better suited to being tracked by other classes, or better suited to being decided by polymorphism."</p>
 
         <img src="media/ClassArchitecture.png" id="architecture"
-            alt="Our class architecture was well thought out and really helped us in the early stages of the project.">
+            alt="Our original idea was to have all objects be childs of the GameObject class, and then having system managers to help control them. This is essentially what ended up happening, but with a lot more managers and communication between classes.">
+        
 
         <p>Vitae justo eget magna fermentum iaculis eu non diam phasellus. Tortor at auctor urna nunc id cursus metus
             aliquam. Imperdiet proin fermentum leo vel orci porta non pulvinar. Tincidunt dui ut ornare lectus sit amet
             est placerat in. Dui vivamus arcu felis bibendum. Eget egestas purus viverra accumsan in nisl nisi
             scelerisque. Morbi tristique senectus et netus et malesuada fames ac. Varius quam quisque id diam vel. Risus
             quis varius quam quisque id diam vel. Ac tortor dignissim convallis aenean et tortor.</p>
+
+            <img src="media/StateMachine.png" id="states" alt="The game runs through a basic game loop.">
 
         <p>Condimentum lacinia quis vel eros. Arcu dictum varius duis at consectetur. Mi quis hendrerit dolor magna eget
             est lorem ipsum. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Morbi leo urna
@@ -60,6 +58,19 @@
             massa vitae tortor condimentum. Dignissim suspendisse in est ante.</p>
 
 
+
+<!-- The Modal -->
+<div id="architectureModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="flowChart">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div> 
 
 
     </main>
