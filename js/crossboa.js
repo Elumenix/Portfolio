@@ -7,6 +7,16 @@ let img = [document.querySelector("#architecture"), document.querySelector("#sta
 let modalImg = document.getElementById("flowChart");
 let captionText = document.getElementById("caption");
 
+
+const header = document.querySelector('header');
+const scrollFactor = .01;
+
+window.addEventListener('scroll', function() {
+  let translateValue = (scrollFactor * 60) * window.scrollY;
+  
+  header.style.transform = `translateY(${translateValue}px)`;
+});
+
 for (i = 0; i < img.length; ++i) {
     img[i].onclick = (e) =>{
         modal.style.display = "block";
