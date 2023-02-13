@@ -25,6 +25,7 @@
             aliquet eget sit amet tellus cras adipiscing enim eu. Et egestas quis ipsum suspendisse ultrices gravida
             dictum.</p>
 
+            <h1>Planning</h1>
         <p>"Our class architecture was well thought out, and really helped us in the early stages of the project. As this project started early in the course, we naturally learned about more features of both MonoGame and C++, so this doesn't represent what our game looked like by the end of development. Some classes were culled of content through the use of interfaces and structs, while in other cases it was decided that more specialized child objects of game classes were necessary to give more function to different objects. Such was the case with projectiles and level tiles. Very early on, we also ended up creating a Physics Manager, to round out a trio of managers to aid the game loop, with the later additions of a Stats, Sound, Spawn, and Camara managers. In retrospect we did have a pretty good idea of the complexity that each class would have, and all the functions we predicted we would need, we did need, along with a few more added to most classes for various reasons. We did have some suprises even in that regard. We expected the Collision Manger to be our largest and most complicated class, and it did come at least 2nd in that regard. The Level Manager became a monster and ended up quadrupling it's size. It would have been even larger if we didn't decide to have a separate Spawn Manager. The only part of our architecture that was removed altogether was the GameManager class, as all of it's contents ended up being either better suited to being tracked by other classes, or better suited to being decided by polymorphism."</p>
 
         <img src="media/ClassArchitecture.png" id="architecture"
@@ -63,15 +64,12 @@
             <iframe src="https://itch.io/embed/1615747?linkback=true" width="552" height="167" frameborder="0"><a href="https://tacnayn.itch.io/crossboa">Crossboa by TacNayn, Elumenix, sleop-deprivation, Bustin</a></iframe>
 
 
-
-<div id="popModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="flowChart">
-  <div id="caption"></div>
-</div> 
-
-
     </main>
+    <div id="popModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="flowChart">
+        <div id="caption"></div>
+      </div> 
 </body>
 
 </html>
