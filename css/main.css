@@ -314,6 +314,7 @@ section:last-of-type {
     cursor: pointer;
     max-height: 35.5rem;
     overflow: hidden;
+    filter:drop-shadow(5px 3px 5px #000000)
 }
 
 .project-card:link,
@@ -423,6 +424,30 @@ section:last-of-type {
         border: none;
     }
 
+    #socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    #email,
+    #linked {
+        width: 40%;
+        transition: transform .2s;
+    }
+
+    #email:hover,
+    #linked:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    #linked {
+        padding: 10%;
+    }
+
     #portfolio {
         grid-row: 3;
         grid-column: 1 / span 2;
@@ -439,8 +464,6 @@ section:last-of-type {
     * {
         box-sizing: border-box;
     }
-
-
 }
 
 /* Position the image container (needed to position the left and right arrows) */
