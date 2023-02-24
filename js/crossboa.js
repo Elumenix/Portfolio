@@ -28,23 +28,25 @@ window.onload = () => {
 
 
   // Get the <span> element that closes the modal
-  let span = document.getElementsByClassName("close")[0];
+  let span = document.querySelectorAll(".close");
 
   // When the user clicks on <span> (x), close the modal
-  span.onclick = function () {
-    modal.style.display = "none";
-    musicModal.style.display = "none";
+  for (let i = 0; i < span.length; i++) {
+    span[i].onclick = () => {
+      modal.style.display = "none";
+      musicModal.style.display = "none";
+    }
   }
 
   var linkElementId = 'ogg';
-var linkElement = document.getElementById(linkElementId);
+  var linkElement = document.getElementById(linkElementId);
 
-if (linkElement) {
-  // Add click event listener to the link element.
-  linkElement.addEventListener('click', playAudio);
-} else {
-  alert('A link element with the ' + linkElementId + ' id could not be found!');
-}
+  if (linkElement) {
+    // Add click event listener to the link element.
+    linkElement.addEventListener('click', playAudio);
+  } else {
+    alert('A link element with the ' + linkElementId + ' id could not be found!');
+  }
 };
 
 
