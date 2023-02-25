@@ -197,6 +197,10 @@ nav>ul>li {
     transition: background-color .2s ease;
 }
 
+#shopGif {
+    width: 100%;
+}
+
 .button:link,
 .button:visited,
 .button:focus,
@@ -267,7 +271,7 @@ nav .button:last-child {
     text-decoration: none;
 }
 
-#title-and-tagline {
+.title-and-tagline {
     margin: 0;
     grid-row: 1;
     grid-column: 1;
@@ -277,6 +281,7 @@ nav .button:last-child {
 #tagline {
     margin-top: -4px;
 }
+
 
 #pfp {
     height: 20em;
@@ -288,6 +293,15 @@ nav .button:last-child {
     margin: 0;
     padding: 0;
     margin-top: 1em;
+}
+
+#gamePlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
 section:last-of-type {
@@ -388,6 +402,11 @@ section:last-of-type {
 @media screen and (min-width: 1200px) {
     .Split button {
         transform: translate(-40%);
+    }
+    #shopGif {
+        float:right;
+        margin: 5px;
+        width: 40%;
     }
 
     .homepage-main {
@@ -639,7 +658,6 @@ section:last-of-type {
 }
 
 @media (min-width: 768px) {
-
     .modalButton,
     .modalButton:after {
         width: 200px;

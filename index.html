@@ -12,8 +12,8 @@
 
 <body>
       <header class='full-header'>
-            <div id='title-and-tagline'>
-                  <h1 id='title'>Donovan Scullion</h1>
+            <div class='title-and-tagline'>
+                  <h1 class='title'>Donovan Scullion</h1>
                   <p id='tagline'><strong>Game Developer, etc.</strong></p>
             </div>
             <nav>
@@ -72,21 +72,21 @@
                         </div>
                         <div class='project-card' id="card-evergreen-escapades">
                               <h3>Evergreen Escapades</h3>
-                              <img src='blank' alt='Evergreen Escapades screenshot'>
+                              <img src='media/creeping.PNG' alt='Evergreen Escapades screenshot'>
                         </div>
 
                         <!--Modals-->
                         <div id="modal-artista" class="modal">
                               <div class="modal-content">
                                     <header>
-                                          <div id="title-and-tagline">
+                                          <div class="title-and-tagline">
                                                 <span class="modal-close">x</span>
-                                                <h1 id="title">Artista</h1>
+                                                <h1 class="title">Artista</h1>
                                     </header>
                                     <div class="project-banner" style="background-image: url(media/Cult.png)"></div>
                                     <main>
                                           <h4><strong>Status:</strong> Complete</h4>
-                                          <h4><strong>TimeFrame:</strong> Fall 2022 (8 weeks)</h4>
+                                          <h4><strong>Time frame:</strong> Fall 2022 (8 weeks)</h4>
                                           <h4><strong>Team Size:</strong> 4
                                                 <p>Artista is a grid-based competetive adventure board game with a large
                                                       emphasis on violence and creulty. Players race to compete their
@@ -128,9 +128,9 @@
                         <div id="modal-ascii-generator" class="modal">
                               <div class="modal-content">
                                     <header>
-                                          <div id="title-and-tagline">
+                                          <div class="title-and-tagline">
                                                 <span class="modal-close">x</span>
-                                                <h1 id="title">ASCII Generator</h1>
+                                                <h1 class="title">ASCII Generator</h1>
                                     </header>
                                     <div class="project-banner">
                                           <!-- Container for the image gallery -->
@@ -203,7 +203,7 @@
                                           </div>
                                           <main>
                                                 <h4><strong>Status:</strong> Complete</h4>
-                                                <h4><strong>TimeFrame:</strong> Fall 2022 (~2 weeks)</h4>
+                                                <h4><strong>Time frame:</strong> Fall 2022 (~2 weeks)</h4>
                                                 <h4><strong>Languages Used:</strong> HTML, CSS, JavaScript</h4>
                                                 <h4><strong>Tools:</strong> Visual Studio Code</h4>
                                                 <p>This is an application that can take any image (given it has an image
@@ -230,6 +230,57 @@
                                     </div>
                               </div>
                         </div>
+                        <div id="modal-evergreen-escapades" class="modal">
+                              <div class="modal-content">
+                                    <header>
+                                          <div class="title-and-tagline">
+                                                <span class="modal-close">x</span>
+                                                <h1 class="title">Evergreen Escapades</h1>
+                                    </header>
+                                    <div class="project-banner" style="background-image: url(media/creeping.PNG)"></div>
+                                    <main>
+                                          <h4><strong>Status:</strong> On Hiatus</h4>
+                                          <h4><strong>Time frame:</strong> Summer - Fall 2022 (4 months)</h4>
+                                          <h4><strong>Engine Used</strong> MonoGame (C#) </h4>
+                                          <h4><strong>Tools Used</strong> Visual Studios, Tiled
+                                                <p>Evergreen Escapades side-view action platformer, where the player
+                                                      battles enemies while traveling from town to town, earning money
+                                                      to upgrade their equipment and train new abilities. Time is always
+                                                      moving forward, changing the threats you face as day transitions
+                                                      to night.</p>
+                                                      <div><img src="media/idle shop.gif" id="shopGif"></div>
+                                                <p>Being built in MonoGame, most elements of the game are made from
+                                                      scratch, as there is little support native to MonoGame outside of
+                                                      tracking time and uploading sprites. I programmed in my own system
+                                                      for running animations and collisions so that the game could
+                                                      function as intended, something that became leagues more
+                                                      complicated when I made the decision to have slopes. I also
+                                                      created a system for parallaxing the background infinitely, which
+                                                      ended up being much harder than expected. The environment was
+                                                      designed in Tiled, which is an open source program for building
+                                                      levels with tilesets. All levels are imported to MonoGame through
+                                                      text files, which I read in to decide what tiles are placed in the
+                                                      world and the properties of each tile.</p>
+                                                <p>This project went on hold when as my life became more busy and there
+                                                      wasn't time to make substantial progress on it. The main problem
+                                                      is that creating stages in tiled takes a massive amount of time
+                                                      for 1 person. When I return to this project, my first steps will
+                                                      be working on procedural level generation to (hopefully) speed up
+                                                      the rate at which I can work on this game.</p>
+                                                <br>
+                                                <p>Examples of how the game might look at day and night can be seen below.</p>
+                                                <div id="gamePlay">
+                                                      <video width="480" height="320" autoplay loop>
+                                                            <source src="media/GrassyPlains.mp4" type="video/mp4">
+                                                      </video>
+                                                      <video width="480" height="320" autoplay loop>
+                                                            <source src="media/LostInTheDark.mp4" type="video/mp4">
+                                                      </video>
+                                                </div>
+                                    </main>
+                              </div>
+                        </div>
+                  </div>
             </section>
       </main>
       <footer>
