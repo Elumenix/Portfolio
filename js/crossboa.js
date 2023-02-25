@@ -2,19 +2,11 @@ window.onload = () => {
   // Get the modal
   let modal = document.getElementById("popModal");
   let musicModal = document.getElementById("musicModal");
-  let email = document.querySelector("#email");
-  let linkedIn = document.querySelector("#linked");
 
   // Get the image and insert it inside the modal - use its "alt" text as a caption
   let img = [document.querySelector("#architecture"), document.querySelector("#states"), document.querySelector("#slime"), document.querySelector("#trello")];
   let modalImg = document.getElementById("flowChart");
   let captionText = document.getElementById("caption");
-
-  // Contact information
-  email.onclick = () => {
-    window.location.href = "mailto:dps5393@rit.edu";
-  }
-
 
   const header = document.querySelector('header');
   const scrollFactor = .01;

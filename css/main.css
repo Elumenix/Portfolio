@@ -1,6 +1,6 @@
 body {
-    background-color: #12282e;
-    color: #f3e1b5;
+    background-color: #1c1c1c;
+    color: #d8d8d8;
 
     margin-left: 10%;
     margin-right: 10%;
@@ -10,18 +10,14 @@ body {
 }
 
 header {
-    background-color: #75476a;
+    background-color: #b17171;
     padding: 1rem;
 }
 
-.full-header {
-    display: grid;
-    grid-template-columns: 1fr 11rem;
-    grid-template-rows: 5.25rem 5.25rem;
-}
+
 
 footer {
-    background-color: #75476a;
+    background-color: #b17171;
     padding: 1rem;
 }
 
@@ -34,7 +30,7 @@ h6 {
     font-family: '8 Bit Wonder';
     font-weight: normal;
     margin-left: 1.5px;
-    color: #ffc582;
+    color: #ffbe4f;
 }
 
 h1 {
@@ -50,16 +46,32 @@ h2 {
 }
 
 main {
-    background-color: #332d52;
+    background-color: #292929;
     padding: 1rem;
     padding-top: .5rem;
 }
 
-.homepage-main {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+#socials {
+    display: flex;
 }
+
+
+#email,
+#linked {
+    width: 40%;
+    transition: transform .2s;
+}
+
+#email:hover,
+#linked:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#linked {
+    padding: 10%;
+}
+
 
 .unstyled-list {
     list-style-type: none;
@@ -108,13 +120,13 @@ figure {
     max-width: 22rem;
     margin: 1rem;
     padding: 0;
-    background-color: #a8605d;
+    background-color: #c1514e;
     border-radius: .25rem;
 }
 
 figure img {
     max-width: 100%;
-    border: 5px solid #a8605d;
+    border: 5px solid #c1514e;
     border-radius: .5rem;
 }
 
@@ -145,7 +157,7 @@ a:visited {
 a:focus,
 a:hover,
 a:active {
-    color: #ff326f;
+    color: #d85757;
 }
 
 nav {
@@ -163,7 +175,7 @@ nav>ul {
     padding: 0;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style-type: none;
 }
 
@@ -176,7 +188,7 @@ nav>ul>li {
     margin-right: .5rem;
     margin-bottom: 0;
 
-    background-color: #a8605d;
+    background-color: #eebbcb;
     border-radius: .25rem;
     text-align: center;
     white-space: nowrap;
@@ -188,14 +200,14 @@ nav>ul>li {
 .button:link,
 .button:visited,
 .button:focus,
-.button:hover,
 .button:active {
-    color: #f3e1b5;
+    color: #9c7b5c;
     text-decoration: none;
 }
 
 .button:hover {
-    background-color: rgb(193, 61, 91);
+    background-color: #c56d85;
+    color: #f3e1b5;
 }
 
 .button>a {
@@ -212,7 +224,7 @@ nav .button {
 }
 
 nav .button+.button {
-    border-left: 2px solid #75476a;
+    border-left: 2px solid #b17171;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -245,7 +257,7 @@ nav .button:last-child {
     line-height: 2.9rem;
     font-size: 3.2rem;
     font-weight: bold;
-    color: #ffc582;
+    color: #ffb34f;
     margin-left: .1rem;
 }
 
@@ -267,27 +279,15 @@ nav .button:last-child {
 }
 
 #pfp {
-    grid-row: 1 / 3;
-    grid-column: 2;
-    height: 100%;
+    height: 20em;
     background-image: url('../media/profilepic.png');
     background-size: cover;
     background-position-x: center;
     background-position-y: top;
-    border: 5px solid #a8605d;
     border-radius: .25rem;
     margin: 0;
     padding: 0;
-}
-
-.clear {
-    clear: both;
-    margin: 0;
-    padding: 0;
-}
-
-section {
-    border-bottom: 1px dotted #f6e79c;
+    margin-top: 1em;
 }
 
 section:last-of-type {
@@ -300,12 +300,12 @@ section:last-of-type {
     gap: 5px;
     margin-top: .75rem;
     padding: .5rem;
-    background-color: #26213d;
+    background-color: #383434;
     border-radius: .25rem;
 }
 
 .project-card {
-    background-color: #a8605d;
+    background-color: #c1514e;
     padding: 1rem;
     margin: .25rem .25rem;
     border-radius: .25rem;
@@ -314,12 +314,12 @@ section:last-of-type {
     cursor: pointer;
     max-height: 35.5rem;
     overflow: hidden;
-    filter:drop-shadow(5px 3px 5px #000000)
+    filter: drop-shadow(5px 3px 5px #000000)
 }
 
 .project-card:link,
 .project-card:visited {
-    color: #f3e1b5;
+    color: #f8d8d8;
 }
 
 .project-card:focus,
@@ -327,7 +327,7 @@ section:last-of-type {
 .project-card:active {
     text-decoration: none;
     transform: scale(1.02, 1.02);
-    background-color: rgb(193, 61, 91);
+    background-color: #d85757;
 }
 
 .project-card p,
@@ -379,15 +379,6 @@ section:last-of-type {
 }
 
 @media screen and (max-width: 560px) {
-    .full-header {
-        grid-template-rows: 7rem 2.5rem;
-        grid-template-columns: 1fr 7rem;
-    }
-
-    #pfp {
-        grid-row: 1 / span 1;
-    }
-
     .full-header nav {
         grid-column: 1 / span 2;
         margin-right: 0;
@@ -399,29 +390,34 @@ section:last-of-type {
         transform: translate(-40%);
     }
 
-    main {
+    .homepage-main {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
     }
 
-    #about-me {
-        grid-row: 1 / span 2;
+    #pfp {
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        grid-row: 1 / 2;
         grid-column: 1;
         margin-right: 2rem;
         border: none;
+        width: 50%;
     }
 
-    #resume {
-        grid-row: 1;
+    #about-me {
+        grid-row: 1 / 3;
         grid-column: 2;
         margin-left: 2rem;
     }
 
     #contact {
-        grid-row: 2;
-        grid-column: 2;
-        margin-left: 2rem;
+        grid-row: 2/3;
+        grid-column: 1/2;
         border: none;
+        margin-top: 1em;
     }
 
     #socials {
@@ -430,22 +426,6 @@ section:last-of-type {
         justify-content: space-between;
         margin-left: 5em;
         margin-right: 5em;
-    }
-
-    #email,
-    #linked {
-        width: 40%;
-        transition: transform .2s;
-    }
-
-    #email:hover,
-    #linked:hover {
-        transform: scale(1.2);
-        cursor: pointer;
-    }
-
-    #linked {
-        padding: 10%;
     }
 
     #portfolio {
