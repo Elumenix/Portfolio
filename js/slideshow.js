@@ -46,6 +46,9 @@ class Slideshow {
       dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[this.slideIndex - 1].style.display = "block";
+    slides[this.slideIndex - 1].style = "background-color:black";
+
+  
     dots[this.slideIndex - 1].className += " active";
     if (this.slideIndex - 1 != 0) {
       // Keeps aspect ratio of image

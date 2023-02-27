@@ -310,7 +310,7 @@ section:last-of-type {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
     gap: 5px;
     margin-top: .75rem;
     padding: .5rem;
@@ -329,6 +329,11 @@ section:last-of-type {
     max-height: 35.5rem;
     overflow: hidden;
     filter: drop-shadow(5px 3px 5px #000000)
+}
+#githubSkirmish {
+    float: right;
+    width: 50%;
+    margin:5px;
 }
 
 .project-card:link,
