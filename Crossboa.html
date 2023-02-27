@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Crossboa</title>
     <link rel='stylesheet' href='css/bootstrap-reboot.css'>
     <link rel='stylesheet' href='css/crossboa.css'>
@@ -52,9 +52,6 @@
             separate Spawn Manager. The only part of our architecture that was removed altogether was the GameManager
             class, as all of it's contents ended up being either better suited to being tracked by other classes, or
             better suited to being decided by polymorphism.</p>
-
-
-
         <img src="media/state-machine.png" id="states"
             alt="Deciding the game loop early on helped cut down on what could have been a lot of trial and error. I can only imagine the bugs we would have had to tackle. The Game Win Screen was eventually removed as the game became infinite, and functionality was added to go from the Pause Screen to the Main Menu.">
         <p>Figuring out how the game would actually work was an entirely separate challenge, though we quickly found
@@ -62,9 +59,6 @@
             gameplay loop as well, and we took care to figure out which options the player would have at each stage of
             the game. This helped us to catch bugs before they happened and prevented us from losing track of the
             direction of the game.</p>
-
-
-
         <p>Communication was key in making sure everything went as planned. We organized a time to meet in person each
             week and work on the game toghether. That's where we made big decisions and planned out the direction of the
             game. Most of the game was developed on our own time, seperately. All of our files were kept in github to
@@ -92,13 +86,10 @@
             text files to save players settings after closing and reopening the game.
         </p>
         <div id="itch-link">
-            <iframe src="https://itch.io/embed/1615747?linkback=true" width="552" height="167" frameborder="0"><a
-                    href="https://tacnayn.itch.io/crossboa">Crossboa by TacNayn, Elumenix, sleop-deprivation,
-                    Bustin</a></iframe>
+            <object id="former-i-frame" type="text/html" data="https://itch.io/embed/1615747">
+                <a href="https://tacnayn.itch.io/crossboa">Crossboa by TacNayn, Elumenix, sleop-deprivation, Bustin</a>
+            </object>
         </div>
-
-
-
     </main>
     <div id="music-modal" class="modal">
         <span class="close">&times;</span>
@@ -111,7 +102,7 @@
     </div>
     <div id="pop-modal" class="modal">
         <span class="close">&times;</span>
-        <img class="modal-content" id="flow-chart">
+        <img src="media/placeholder.jpg" alt="Placeholder Image" class="modal-content" id="flow-chart">
         <div id="caption"></div>
     </div>
 </body>

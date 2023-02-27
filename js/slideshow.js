@@ -68,6 +68,6 @@ class Slideshow {
 }
 
 window.addEventListener('load', function () {
-  const slideshow1 = new Slideshow(1, ".my-slides-1", ".demo-1", "#caption-1", "#slides-1");
-  const slideshow2 = new Slideshow(1, ".my-slides-2", ".demo-2", "#caption-2", "#slides-2");
+  const slideshow1 = new Slideshow(1, ".my-slides-1", ".demo-1", "#caption-1", ".slides-1");
+  const slideshow2 = new Slideshow(1, ".my-slides-2", ".demo-2", "#caption-2", ".slides-2");
 });

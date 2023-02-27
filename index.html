@@ -3,7 +3,7 @@
 
 <head>
       <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Donovan Scullion - Portfolio</title>
       <link rel='stylesheet' href='css/bootstrap-reboot.css'>
       <link rel='stylesheet' href='css/main.css'>
@@ -28,8 +28,8 @@
             </nav>
       </header>
       <main class='homepage-main'>
-            <section id='pfp'>
-            </section>
+            <div id='pfp'>
+            </div>
             <section id='about-me'>
                   <h2>About Me</h2>
                   <p>Hello! My name is Donovan and I am currently a programmer / game designer pursuing a path in the
@@ -51,8 +51,9 @@
                   <h2>Contact</h2>
                   <p>Places you can reach me:</p>
                   <div id="socials">
-                        <img src="media/email.png" id="email">
-                        <img src="media/linked-in.png" id="linked">
+                        <img src="media/email.png" id="email" alt="You can reach me by email at dps5393@rit.edu">
+                        <img src="media/linked-in.png" id="linked"
+                              alt="My LinkedIn is located at https://www.linkedin.com/in/donovanscullion/">
                   </div>
             </section>
             <section id='portfolio'>
@@ -82,344 +83,360 @@
                               <h3>Evergreen Escapades</h3>
                               <img src='media/creeping.png' alt='Evergreen Escapades screenshot'>
                         </div>
-
-                        <!--Modals-->
-                        <div id="modal-artista" class="modal">
-                              <div class="modal-content">
-                                    <header>
-                                          <div class="title-and-tagline">
-                                                <span class="modal-close">x</span>
-                                                <h1 class="title">Artista</h1>
-                                    </header>
-                                    <div class="project-banner" style="background-image: url(media/cult.png)"></div>
-                                    <main>
-                                          <h4><strong>Status:</strong> Complete</h4>
-                                          <h4><strong>Time frame:</strong> Fall 2022 (8 weeks)</h4>
-                                          <h4><strong>Team Size:</strong> 4
-                                                <p>Artista is a grid-based competetive adventure board game with a large
-                                                      emphasis on violence and creulty. Players race to compete their
-                                                      masterpiece and become the Artista, the most powerful and
-                                                      cutthroat creative in the city of Chiaroscuro. To get to this
-                                                      point however, they have to hold a tight grasp on their sanity and
-                                                      find inspiration to get ahead of their rivals.
-                                                </p>
-                                                <p>This game was created in a small team of 4 people as part of a game
-                                                      design course. As the only Game Design and Development major in
-                                                      the group, I ended up designing a large portion of the gameplay
-                                                      loop and gave feedback on classes and mechanics other team members
-                                                      designed for the experience. I also played a large part in the
-                                                      organization and proofreading of our documents and rules, which
-                                                      helped to keep the group largely organized and focused on the
-                                                      content of the game.</p>
-                                                <br>
-                                                <div class="split">
-                                                      <div id="main-game">
-                                                            <p>Design document for the game. Links to rules and class
-                                                                  documents can be found in the appendix.</p>
-                                                            <br>
-                                                            <button type="button" class="modal-button"
-                                                                  id="artista-link">Design
-                                                                  Doc</button>
-                                                      </div>
-                                                      <div id="mood-board">
-                                                            <p>Mood board I designed for the game using HTML and CSS as
-                                                                  part of a different course.</p>
-                                                            <br>
-                                                            <button type="button" class="modal-button"
-                                                                  id="mood-board-link">Mood
-                                                                  Board</button>
-                                                      </div>
-                                                </div>
-                                    </main>
-                              </div>
-                        </div>
-                        <div id="modal-ascii-generator" class="modal">
-                              <div class="modal-content">
-                                    <header>
-                                          <div class="title-and-tagline">
-                                                <span class="modal-close">x</span>
-                                                <h1 class="title">ASCII Generator</h1>
-                                    </header>
-                                    <div class="project-banner">
-                                          <div class="container">
-
-                                                <div class="my-slides-1">
-                                                      <div class="number-text">1 / 5</div>
-                                                      <img src="media/celeste-ascii.png" style="width:100%">
-                                                </div>
-
-                                                <div class="my-slides-1">
-                                                      <div class="number-text">2 / 5</div>
-                                                      <img src="media/hornet-ascii.png" style="width:100%">
-                                                </div>
-
-                                                <div class="my-slides-1">
-                                                      <div class="number-text">3 / 5</div>
-                                                      <img src="media/ds3-ascii.png" style="width:100%">
-                                                </div>
-
-                                                <div class="my-slides-1">
-                                                      <div class="number-text">4 / 5</div>
-                                                      <img src="media/wisp-ascii.png" style="margin:0 auto">
-                                                </div>
-
-                                                <div class="my-slides-1">
-                                                      <div class="number-text">5 / 5</div>
-                                                      <img src="media/stray-ascii.png">
-                                                </div>
-
-
-                                                <a class="prev" id="slides-1">&#10094;</a>
-                                                <a class="next" id="slides-1">&#10095;</a>
-
-                                                <div class="caption-container">
-                                                      <p id="caption-1"></p>
-                                                </div>
-
-                                                <div class="row">
-                                                      <div class="column">
-                                                            <img class="demo-1" src="media/celeste-ascii.png"
-                                                                  style="width:100%" alt="Celeste">
-                                                      </div>
-                                                      <div class="column">
-                                                            <img class="demo-1" src="media/hornet-ascii.png"
-                                                                  style="width:100%" alt="Hollow Knight Silksong">
-                                                      </div>
-                                                      <div class="column">
-                                                            <img class="demo-1" src="media/ds3-ascii.png"
-                                                                  style="width:100%" alt="Dark Souls 3">
-                                                      </div>
-                                                      <div class="column">
-                                                            <img class="demo-1" src="media/wisp-ascii.png"
-                                                                  style="width:100%"
-                                                                  alt="Ori and the Will of the Wisps">
-                                                      </div>
-                                                      <div class="column">
-                                                            <img class="demo-1" src="media/stray-ascii.png"
-                                                                  style="width:100%" alt="Stray">
-                                                      </div>
-                                                </div>
-                                          </div>
-                                          <main>
-                                                <h4><strong>Status:</strong> Complete</h4>
-                                                <h4><strong>Time frame:</strong> Fall 2022 (~2 weeks)</h4>
-                                                <h4><strong>Languages Used:</strong> HTML, CSS, JavaScript</h4>
-                                                <h4><strong>Tools:</strong> Visual Studio Code</h4>
-                                                <p>This is an application that can take any image (given it has an image
-                                                      url),
-                                                      and turn it into ASCII art. I used an external API from filestack
-                                                      in
-                                                      order to do this. I've given a variety of options to the user for
-                                                      how
-                                                      their art should be displayed, and I save their generated pieces
-                                                      to
-                                                      local storage so that they can easily be brought back up later in
-                                                      the
-                                                      sidebar. This is something that I've found fun to experiment with.
-                                                </p>
-                                                <p>Above are some examples of what I've been able to create with it,
-                                                      featuring some of my favorite games. Try changing your browser
-                                                      width and see how clear the images look at smaller resolutions.
-                                                </p>
-                                                <br>
-                                                <button type="button" class="modal-button" id="ascii-link">Try
-                                                      It Here</button>
-                                          </main>
-                                    </div>
-                              </div>
-                        </div>
-                        <div id="modal-evergreen-escapades" class="modal">
-                              <div class="modal-content">
-                                    <header>
-                                          <div class="title-and-tagline">
-                                                <span class="modal-close">x</span>
-                                                <h1 class="title">Evergreen Escapades</h1>
-                                    </header>
-                                    <div class="project-banner" style="background-image: url(media/creeping.png)"></div>
-                                    <main>
-                                          <h4><strong>Status:</strong> On Hiatus</h4>
-                                          <h4><strong>Time frame:</strong> Summer - Fall 2022 (4 months)</h4>
-                                          <h4><strong>Engine Used:</strong> MonoGame (C#) </h4>
-                                          <h4><strong>Tools Used:</strong> Visual Studios, Tiled
-                                                <p>Evergreen Escapades side-view action platformer, where the player
-                                                      battles enemies while traveling from town to town, earning money
-                                                      to upgrade their equipment and train new abilities. Time is always
-                                                      moving forward, changing the threats you face as day transitions
-                                                      to night.</p>
-                                                <div><img src="media/idle-shop.gif" id="shop-gif"></div>
-                                                <p>Being built in MonoGame, most elements of the game are made from
-                                                      scratch, as there is little support native to MonoGame outside of
-                                                      tracking time and uploading sprites. I programmed in my own system
-                                                      for running animations and collisions so that the game could
-                                                      function as intended, something that became leagues more
-                                                      complicated when I made the decision to have slopes. I also
-                                                      created a system for parallaxing the background infinitely, which
-                                                      ended up being much harder than expected. The environment was
-                                                      designed in Tiled, which is an open source program for building
-                                                      levels with tilesets. All levels are imported to MonoGame through
-                                                      text files, which I read in to decide what tiles are placed in the
-                                                      world and the properties of each tile.</p>
-                                                <p>This project went on hold when as my life became more busy and there
-                                                      wasn't time to make substantial progress on it. The main problem
-                                                      is that creating stages in tiled takes a massive amount of time
-                                                      for 1 person. When I return to this project, my first steps will
-                                                      be working on procedural level generation to (hopefully) speed up
-                                                      the rate at which I can work on this game.</p>
-                                                <br>
-                                                <p>Examples of how the game might look at day and night can be seen
-                                                      below.</p>
-                                                <div id="gameplay">
-                                                      <video width="480" height="320" autoplay loop>
-                                                            <source src="media/grassy-plains.mp4" type="video/mp4">
-                                                      </video>
-                                                      <video width="480" height="320" autoplay loop>
-                                                            <source src="media/lost-in-the-dark.mp4" type="video/mp4">
-                                                      </video>
-                                                </div>
-                                    </main>
-                              </div>
-                        </div>
-                        <div id="modal-confrontation" class="modal">
-                              <div class="modal-content">
-                                    <header>
-                                          <div class="title-and-tagline">
-                                                <span class="modal-close">x</span>
-                                                <h1 class="title">Confrontation</h1>
-                                    </header>
-                                    <main>
-                                          <video id="orbit" autoplay loop controls>
-                                                <source src="media/orbit.mp4" type="video/mp4">
-                                          </video>
-                                          <h4><strong>Status:</strong> Ongoing</h4>
-                                          <h4><strong>Time frame:</strong> Winter 2023 (2 months)</h4>
-                                          <h4><strong>Engine Used:</strong> Unity (C#) </h4>
-                                          <h4><strong>Tools Used:</strong> Jetbrains Rider
-                                                <p>Confrontation is gearing up to be a story of galactic conquest
-                                                      against your enemies. The player takes control of planets and
-                                                      wages intergalactic battle to take over the universe, one solar
-                                                      system at a time. Quick thinking and solid tactics are expected
-                                                      from a great leader, and they'll be required in order to gain the
-                                                      upper hand against enemies.</p>
-                                                <p>Confrontation is a real-time strategy game based around resource and
-                                                      territory managment. The player will take control of planets and
-                                                      generate income from each planet they control, which can in turn
-                                                      be spent to increase troop production or capacity on each of their
-                                                      planets. All this will need to be done while waging war against
-                                                      AI, who will be doing the same thing right alongside you.</p>
-                                                <p>This project started out as a class coding project but quickly turned
-                                                      into a personal one. The main goals were the programming of
-                                                      autonomous agents and pathfinding. State machines are used to
-                                                      control ship behavior, with each state having it's own unique set
-                                                      of behaviors relateed to ally and enemy ships to make them orbit,
-                                                      travel, and battle in realistic ways. Progress has been good so
-                                                      far and I hope to begin making levels once enemy's begin to behave
-                                                      on their own.</p>
-                                                <br>
-                                                <p>Examples of agent behaviors can be seen below:</p>
-                                                <div id="demo">
-                                                      <video width="480" height="320" loop controls>
-                                                            <source src="media/journey.mp4" type="video/mp4">
-                                                      </video>
-                                                      <video width="480" height="320" loop controls>
-                                                            <source src="media/attack.mp4" type="video/mp4">
-                                                      </video>
-                                                </div>
-                                    </main>
-                              </div>
-                        </div>
-                        <div id="modal-spaceway-skirmish" class="modal">
-                              <div class="modal-content">
-                                    <header>
-                                          <div class="title-and-tagline">
-                                                <span class="modal-close">x</span>
-                                                <h1 class="title">Spaceway Skirmish</h1>
-                                    </header>
-                                    <div class="project-banner" style="background-image: url(media/mars.png);">
-                                    </div>
-                                    <main>
-                                          <h4><strong>Status:</strong> Complete</h4>
-                                          <h4><strong>Time frame:</strong> Fall 2022 (~4 weeks)</h4>
-                                          <h4><strong>Engine Used:</strong> Unity (C#)</h4>
-                                          <h4><strong>Tools Used:</strong> Jetbrains Rider</h4>
-                                          <p>Spaceway Skirmish sees you fighting of the front lines of a stellar
-                                                conflict. Seeking only glory, you venture out to make scrap metal of all
-                                                ships that would dare oppose you. Whether it be enemy ships or the
-                                                kepler belt, you won't stop fighting until someone takes you down for
-                                                good.
-                                          </p>
-                                          <img src="media/death.gif" id="death">
-                                          <p>Spaceway Skirmish class project whos primary goal was the introduction to
-                                                the Unity Engine. The goal was to make a shoot-em-up with a score
-                                                system. The only real requirenments were to have enemies and be able to
-                                                fight them, so I wen't pretty far beyond the goal to involve parallaxing
-                                                and animations, which let me gain a general understanding of the sprite
-                                                editor and workflow. The most complex thing I did was create a system so
-                                                that no enemies would overlap, which involved writing a sorting
-                                                algorithm to put them in order so that it could quickly be identified
-                                                where open space was. All things considered it is a relatively small
-                                                project but it helped build a greater understanding for how to program
-                                                with components, as compared to the hierarchical nightmare I was used to
-                                                with MonoGame.
-                                          </p>
-                                          <iframe
-                                                src="https://itch.io/embed/1869224?linkback=true&amp;bg_color=252f32&amp;fg_color=ffffff&amp;border_color=a70b15"
-                                                width="552" height="167" frameborder="0" id="github-skirmish"><a
-                                                      href="https://elumenix.itch.io/spaceway-skirmish">Spaceway
-                                                      Skirmish by Elumenix</a></iframe>
-                                          <p>The full game can be played within the browser on Itch.io. More screenshots
-                                                of the game can also be found in the gallery below.</p>
-
-
-                                          <br><br><br><br><br>
-
-                                          <div class="container">
-
-                                                <div class="my-slides-2">
-                                                      <div class="number-text">1 / 3</div>
-                                                      <img src="media/title-screen.gif" style="width:100%">
-                                                </div>
-
-                                                <div class="my-slides-2">
-                                                      <div class="number-text">2 / 3</div>
-                                                      <img src="media/black-hole.png" style="width:100%">
-                                                </div>
-
-                                                <div class="my-slides-2">
-                                                      <div class="number-text">3 / 3</div>
-                                                      <img src="media/sun.png" style="width:100%">
-                                                </div>
-
-
-                                                <a class="prev" id="slides-2">&#10094;</a>
-                                                <a class="next" id="slides-2">&#10095;</a>
-
-                                                <div class="caption-container">
-                                                      <p id="caption-2"></p>
-                                                </div>
-
-                                                <div class="row">
-                                                      <div class="column">
-                                                            <img class="demo-2" src="media/title-screen.gif"
-                                                                  style="width:100%"
-                                                                  alt="You're the last one remaining. Complete the Mission.">
-                                                      </div>
-                                                      <div class="column">
-                                                            <img class="demo-2" src="media/black-hole.png"
-                                                                  style="width:100%"
-                                                                  alt="This actually seems quite dangerous, doesn't it.">
-                                                      </div>
-                                                      <div class="column">
-                                                            <img class="demo-2" src="media/sun.png" style="width:100%"
-                                                                  alt="Passing by a star..">
-                                                      </div>
-                                                </div>
-                                          </div>
-                                    </main>
-                              </div>
-                        </div>
                   </div>
             </section>
       </main>
+      <!--Modals-->
+      <div id="modal-artista" class="modal">
+            <div class="modal-content">
+                  <header>
+                        <div class="title-and-tagline">
+                              <span class="modal-close">x</span>
+                              <h1 class="title">Artista</h1>
+                        </div>
+                  </header>
+                  <div class="project-banner" style="background-image: url(media/cult.png)"></div>
+                  <div class="main">
+
+                        <h4><strong>Status:</strong> Complete</h4>
+                        <h4><strong>Time frame:</strong> Fall 2022 (8 weeks)</h4>
+                        <h4><strong>Team Size:</strong> 4</h4>
+                        <p>Artista is a grid-based competetive adventure board game with a large
+                              emphasis on violence and creulty. Players race to compete their
+                              masterpiece and become the Artista, the most powerful and
+                              cutthroat creative in the city of Chiaroscuro. To get to this
+                              point however, they have to hold a tight grasp on their sanity and
+                              find inspiration to get ahead of their rivals.
+                        </p>
+                        <p>This game was created in a small team of 4 people as part of a game
+                              design course. As the only Game Design and Development major in
+                              the group, I ended up designing a large portion of the gameplay
+                              loop and gave feedback on classes and mechanics other team members
+                              designed for the experience. I also played a large part in the
+                              organization and proofreading of our documents and rules, which
+                              helped to keep the group largely organized and focused on the
+                              content of the game.</p>
+                        <br>
+                        <div class="split">
+                              <div id="main-game">
+                                    <p>Design document for the game. Links to rules and class
+                                          documents can be found in the appendix.</p>
+                                    <br>
+                                    <button type="button" class="modal-button" id="artista-link">Design
+                                          Doc</button>
+                              </div>
+                              <div id="mood-board">
+                                    <p>Mood board I designed for the game using HTML and CSS as
+                                          part of a different course.</p>
+                                    <br>
+                                    <button type="button" class="modal-button" id="mood-board-link">Mood
+                                          Board</button>
+                              </div>
+                        </div>
+                  </div>
+
+            </div>
+      </div>
+      <div id="modal-ascii-generator" class="modal">
+            <div class="modal-content">
+                  <header>
+                        <div class="title-and-tagline">
+                              <span class="modal-close">x</span>
+                              <h1 class="title">ASCII Generator</h1>
+                        </div>
+                  </header>
+                  <div class="project-banner">
+                        <div class="container">
+
+                              <div class="my-slides-1">
+                                    <div class="number-text">1 / 5</div>
+                                    <img src="media/celeste-ascii.png" alt="Celeste" style="width:100%">
+                              </div>
+
+                              <div class="my-slides-1">
+                                    <div class="number-text">2 / 5</div>
+                                    <img src="media/hornet-ascii.png" alt="Hornet" style="width:100%">
+                              </div>
+
+                              <div class="my-slides-1">
+                                    <div class="number-text">3 / 5</div>
+                                    <img src="media/ds3-ascii.png" alt="Dark Souls 3" style="width:100%">
+                              </div>
+
+                              <div class="my-slides-1">
+                                    <div class="number-text">4 / 5</div>
+                                    <img src="media/wisp-ascii.png" alt="Ori and the Will of the Wisps"
+                                          style="margin:0 auto">
+                              </div>
+
+                              <div class="my-slides-1">
+                                    <div class="number-text">5 / 5</div>
+                                    <img src="media/stray-ascii.png" alt="Stray">
+                              </div>
+
+
+                              <a class="prev slides-1">&#10094;</a>
+                              <a class="next slides-1">&#10095;</a>
+
+                              <div class="caption-container">
+                                    <p id="caption-1"></p>
+                              </div>
+
+                              <div class="row">
+                                    <div class="column">
+                                          <img class="demo-1" src="media/celeste-ascii.png" style="width:100%"
+                                                alt="Celeste">
+                                    </div>
+                                    <div class="column">
+                                          <img class="demo-1" src="media/hornet-ascii.png" style="width:100%"
+                                                alt="Hollow Knight Silksong">
+                                    </div>
+                                    <div class="column">
+                                          <img class="demo-1" src="media/ds3-ascii.png" style="width:100%"
+                                                alt="Dark Souls 3">
+                                    </div>
+                                    <div class="column">
+                                          <img class="demo-1" src="media/wisp-ascii.png" style="width:100%"
+                                                alt="Ori and the Will of the Wisps">
+                                    </div>
+                                    <div class="column">
+                                          <img class="demo-1" src="media/stray-ascii.png" style="width:100%"
+                                                alt="Stray">
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="main">
+                              <h4><strong>Status:</strong> Complete</h4>
+                              <h4><strong>Time frame:</strong> Fall 2022 (~2 weeks)</h4>
+                              <h4><strong>Languages Used:</strong> HTML, CSS, JavaScript</h4>
+                              <h4><strong>Tools:</strong> Visual Studio Code</h4>
+                              <p>This is an application that can take any image (given it has an image
+                                    url),
+                                    and turn it into ASCII art. I used an external API from filestack
+                                    in
+                                    order to do this. I've given a variety of options to the user for
+                                    how
+                                    their art should be displayed, and I save their generated pieces
+                                    to
+                                    local storage so that they can easily be brought back up later in
+                                    the
+                                    sidebar. This is something that I've found fun to experiment with.
+                              </p>
+                              <p>Above are some examples of what I've been able to create with it,
+                                    featuring some of my favorite games. Try changing your browser
+                                    width and see how clear the images look at smaller resolutions.
+                              </p>
+                              <br>
+                              <button type="button" class="modal-button" id="ascii-link">Try
+                                    It Here</button>
+                        </div>
+
+                  </div>
+            </div>
+      </div>
+      <div id="modal-evergreen-escapades" class="modal">
+            <div class="modal-content">
+                  <header>
+                        <div class="title-and-tagline">
+                              <span class="modal-close">x</span>
+                              <h1 class="title">Evergreen Escapades</h1>
+                        </div>
+                  </header>
+                  <div class="project-banner" style="background-image: url(media/creeping.png)"></div>
+                  <div class="main">
+
+                        <h4><strong>Status:</strong> On Hiatus</h4>
+                        <h4><strong>Time frame:</strong> Summer - Fall 2022 (4 months)</h4>
+                        <h4><strong>Engine Used:</strong> MonoGame (C#) </h4>
+                        <h4><strong>Tools Used:</strong> Visual Studios, Tiled</h4>
+                        <p>Evergreen Escapades side-view action platformer, where the player
+                              battles enemies while traveling from town to town, earning money
+                              to upgrade their equipment and train new abilities. Time is always
+                              moving forward, changing the threats you face as day transitions
+                              to night.</p>
+                        <div><img src="media/idle-shop.gif"
+                                    alt="Another busy day of selling wares in the middle of nowhere." id="shop-gif">
+                        </div>
+                        <p>Being built in MonoGame, most elements of the game are made from
+                              scratch, as there is little support native to MonoGame outside of
+                              tracking time and uploading sprites. I programmed in my own system
+                              for running animations and collisions so that the game could
+                              function as intended, something that became leagues more
+                              complicated when I made the decision to have slopes. I also
+                              created a system for parallaxing the background infinitely, which
+                              ended up being much harder than expected. The environment was
+                              designed in Tiled, which is an open source program for building
+                              levels with tilesets. All levels are imported to MonoGame through
+                              text files, which I read in to decide what tiles are placed in the
+                              world and the properties of each tile.</p>
+                        <p>This project went on hold when as my life became more busy and there
+                              wasn't time to make substantial progress on it. The main problem
+                              is that creating stages in tiled takes a massive amount of time
+                              for 1 person. When I return to this project, my first steps will
+                              be working on procedural level generation to (hopefully) speed up
+                              the rate at which I can work on this game.</p>
+                        <br>
+                        <p>Examples of how the game might look at day and night can be seen
+                              below.</p>
+                        <div id="gameplay">
+                              <video width="480" height="320" autoplay loop>
+                                    <source src="media/grassy-plains.mp4" type="video/mp4">
+                              </video>
+                              <video width="480" height="320" autoplay loop>
+                                    <source src="media/lost-in-the-dark.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                  </div>
+
+            </div>
+      </div>
+      <div id="modal-confrontation" class="modal">
+            <div class="modal-content">
+                  <header>
+                        <div class="title-and-tagline">
+                              <span class="modal-close">x</span>
+                              <h1 class="title">Confrontation</h1>
+                        </div>
+                  </header>
+                  <div class="main">
+
+                        <video id="orbit" autoplay loop controls>
+                              <source src="media/orbit.mp4" type="video/mp4">
+                        </video>
+                        <h4><strong>Status:</strong> Ongoing</h4>
+                        <h4><strong>Time frame:</strong> Winter 2023 (2 months)</h4>
+                        <h4><strong>Engine Used:</strong> Unity (C#) </h4>
+                        <h4><strong>Tools Used:</strong> Jetbrains Rider</h4>
+                        <p>Confrontation is gearing up to be a story of galactic conquest
+                              against your enemies. The player takes control of planets and
+                              wages intergalactic battle to take over the universe, one solar
+                              system at a time. Quick thinking and solid tactics are expected
+                              from a great leader, and they'll be required in order to gain the
+                              upper hand against enemies.</p>
+                        <p>Confrontation is a real-time strategy game based around resource and
+                              territory managment. The player will take control of planets and
+                              generate income from each planet they control, which can in turn
+                              be spent to increase troop production or capacity on each of their
+                              planets. All this will need to be done while waging war against
+                              AI, who will be doing the same thing right alongside you.</p>
+                        <p>This project started out as a class coding project but quickly turned
+                              into a personal one. The main goals were the programming of
+                              autonomous agents and pathfinding. State machines are used to
+                              control ship behavior, with each state having it's own unique set
+                              of behaviors relateed to ally and enemy ships to make them orbit,
+                              travel, and battle in realistic ways. Progress has been good so
+                              far and I hope to begin making levels once enemy's begin to behave
+                              on their own.</p>
+                        <br>
+                        <p>Examples of agent behaviors can be seen below:</p>
+                        <div id="demo">
+                              <video width="480" height="320" loop controls>
+                                    <source src="media/journey.mp4" type="video/mp4">
+                              </video>
+                              <video width="480" height="320" loop controls>
+                                    <source src="media/attack.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                  </div>
+
+            </div>
+      </div>
+      <div id="modal-spaceway-skirmish" class="modal">
+            <div class="modal-content">
+                  <header>
+                        <div class="title-and-tagline">
+                              <span class="modal-close">x</span>
+                              <h1 class="title">Spaceway Skirmish</h1>
+                        </div>
+                  </header>
+                  <div class="project-banner" style="background-image: url(media/mars.png);">
+                  </div>
+                  <div class="main">
+
+                        <h4><strong>Status:</strong> Complete</h4>
+                        <h4><strong>Time frame:</strong> Fall 2022 (~4 weeks)</h4>
+                        <h4><strong>Engine Used:</strong> Unity (C#)</h4>
+                        <h4><strong>Tools Used:</strong> Jetbrains Rider</h4>
+                        <p>Spaceway Skirmish sees you fighting of the front lines of a stellar
+                              conflict. Seeking only glory, you venture out to make scrap metal of all
+                              ships that would dare oppose you. Whether it be enemy ships or the
+                              kepler belt, you won't stop fighting until someone takes you down for
+                              good.
+                        </p>
+                        <img src="media/death.gif" alt="Every journey must come to an end." id="death">
+                        <p>Spaceway Skirmish class project whos primary goal was the introduction to
+                              the Unity Engine. The goal was to make a shoot-em-up with a score
+                              system. The only real requirenments were to have enemies and be able to
+                              fight them, so I wen't pretty far beyond the goal to involve parallaxing
+                              and animations, which let me gain a general understanding of the sprite
+                              editor and workflow. The most complex thing I did was create a system so
+                              that no enemies would overlap, which involved writing a sorting
+                              algorithm to put them in order so that it could quickly be identified
+                              where open space was. All things considered it is a relatively small
+                              project but it helped build a greater understanding for how to program
+                              with components, as compared to the hierarchical nightmare I was used to
+                              with MonoGame.
+                        </p>
+
+
+                        <object id="github-skirmish" type="text/html"
+                              data="https://itch.io/embed/1869224?linkback=true&amp;bg_color=252f32&amp;fg_color=ffffff&amp;border_color=a70b15">
+                              <a href="https://elumenix.itch.io/spaceway-skirmish">Spaceway
+                                    Skirmish by Elumenix</a>
+                        </object>
+
+                        <p>The full game can be played within the browser on Itch.io. More screenshots
+                              of the game can also be found in the gallery below.</p>
+
+
+                        <br><br><br><br><br>
+
+                        <div class="container">
+
+                              <div class="my-slides-2">
+                                    <div class="number-text">1 / 3</div>
+                                    <img src="media/title-screen.gif" alt="A view of the title screen."
+                                          style="width:100%">
+                              </div>
+
+                              <div class="my-slides-2">
+                                    <div class="number-text">2 / 3</div>
+                                    <img src="media/black-hole.png" alt="A scary encounter with a black hole."
+                                          style="width:100%">
+                              </div>
+
+                              <div class="my-slides-2">
+                                    <div class="number-text">3 / 3</div>
+                                    <img src="media/sun.png" alt="The brilliant shining sun." style="width:100%">
+                              </div>
+
+
+                              <a class="prev slides-2">&#10094;</a>
+                              <a class="next slides-2">&#10095;</a>
+
+                              <div class="caption-container">
+                                    <p id="caption-2"></p>
+                              </div>
+
+                              <div class="row">
+                                    <div class="column">
+                                          <img class="demo-2" src="media/title-screen.gif" style="width:100%"
+                                                alt="You're the last one remaining. Complete the Mission.">
+                                    </div>
+                                    <div class="column">
+                                          <img class="demo-2" src="media/black-hole.png" style="width:100%"
+                                                alt="This actually seems quite dangerous, doesn't it.">
+                                    </div>
+                                    <div class="column">
+                                          <img class="demo-2" src="media/sun.png" style="width:100%"
+                                                alt="Passing by a star..">
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+
+            </div>
+      </div>
       <footer>
             <p><small>© Donovan Scullion 2022</small></p>
       </footer>

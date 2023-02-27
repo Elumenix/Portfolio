@@ -198,6 +198,12 @@ header {
   }
 }
 
+#former-i-frame {
+  width: 552px;
+  height: 167px;
+  border: 0px;
+}
+
 /* The Close Button */
 .close {
   position: absolute;

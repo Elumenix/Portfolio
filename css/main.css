@@ -45,7 +45,7 @@ h2 {
     line-height: 1em;
 }
 
-main {
+main, .main {
     background-color: #292929;
     padding: 1rem;
     padding-top: .5rem;
@@ -239,6 +239,8 @@ nav .button:last-child {
     border-bottom-right-radius: .25rem;
 }
 
+
+
 .modal {
     display: none;
     position: fixed;
@@ -337,6 +339,8 @@ section:last-of-type {
     float: right;
     width: 50%;
     margin: 5px;
+    height: 167;
+    border: 0px;
 }
 
 .project-card:link,
