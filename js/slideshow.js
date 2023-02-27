@@ -48,7 +48,7 @@ class Slideshow {
     slides[this.slideIndex - 1].style.display = "block";
     slides[this.slideIndex - 1].style = "background-color:black";
 
-  
+
     dots[this.slideIndex - 1].className += " active";
     if (this.slideIndex - 1 != 0) {
       // Keeps aspect ratio of image
@@ -67,8 +67,7 @@ class Slideshow {
   }
 }
 
-window.addEventListener('load', function (){
-  const slideshow1 = new Slideshow(1, ".mySlides1", ".demo1", "#caption1", "#slides1");
-  const slideshow2 = new Slideshow(1, ".mySlides2", ".demo2", "#caption2", "#slides2");
+window.addEventListener('load', function () {
+  const slideshow1 = new Slideshow(1, ".my-slides-1", ".demo-1", "#caption-1", "#slides-1");
+  const slideshow2 = new Slideshow(1, ".my-slides-2", ".demo-2", "#caption-2", "#slides-2");
 });
-

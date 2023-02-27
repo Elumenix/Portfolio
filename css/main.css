@@ -135,12 +135,12 @@ figcaption {
     text-align: center;
 }
 
-.Split {
+.split {
     display: flex;
     padding: 1em;
 }
 
-.Split p {
+.split p {
     text-align: justify;
     padding-left: 9%;
     padding-right: 9%;
@@ -197,7 +197,8 @@ nav>ul>li {
     transition: background-color .2s ease;
 }
 
-#shopGif, #death {
+#shop-gif,
+#death {
     width: 100%;
 }
 
@@ -295,7 +296,8 @@ nav .button:last-child {
     margin-top: 1em;
 }
 
-#gamePlay, #demo {
+#gameplay,
+#demo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -330,10 +332,11 @@ section:last-of-type {
     overflow: hidden;
     filter: drop-shadow(5px 3px 5px #000000)
 }
-#githubSkirmish {
+
+#github-skirmish {
     float: right;
     width: 50%;
-    margin:5px;
+    margin: 5px;
 }
 
 .project-card:link,
@@ -361,7 +364,7 @@ section:last-of-type {
     object-fit: cover;
 }
 
-.project-banner{
+.project-banner {
     height: 30rem;
     width: 100%;
     background-image: url('../media/placeholder.jpg');
@@ -413,11 +416,13 @@ section:last-of-type {
 }
 
 @media screen and (min-width: 1200px) {
-    .Split button {
+    .split button {
         transform: translate(-40%);
     }
-    #shopGif, #death {
-        float:right;
+
+    #shop-gif,
+    #death {
+        float: right;
         margin: 5px;
         width: 40%;
     }
@@ -468,7 +473,7 @@ section:last-of-type {
 
 
 
-    .modalButton {
+    .modal-button {
         left: 42.5%;
     }
 
@@ -484,7 +489,7 @@ section:last-of-type {
 }
 
 /* Hide the images by default */
-.mySlides {
+.my-slides {
     display: none;
     background-color: black;
 }
@@ -524,7 +529,7 @@ section:last-of-type {
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+.number-text {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -557,8 +562,8 @@ section:last-of-type {
 
 /* Full Credit to Steven Lei for this button design 
     https://codepen.io/stevenlei*/
-.modalButton,
-.modalButton:after {
+.modal-button,
+.modal-button:after {
     width: 150px;
     height: 76px;
     line-height: 78px;
@@ -576,7 +581,7 @@ section:last-of-type {
     touch-action: manipulation;
 }
 
-.modalButton:after {
+.modal-button:after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -596,19 +601,19 @@ section:last-of-type {
     clip-path: var(--slice-0);
 }
 
-#ASCIILink.modalButton:after {
+#ascii-link.modal-button:after {
     content: 'ASCII';
 }
 
-#artistaLink.modalButton:after {
+#artista-link.modal-button:after {
     content: 'Sanity';
 }
 
-#moodBoardLink.modalButton:after {
+#mood-board-link.modal-button:after {
     content: 'Inspiration';
 }
 
-.modalButton:hover:after {
+.modal-button:hover:after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
 }
@@ -671,8 +676,9 @@ section:last-of-type {
 }
 
 @media (min-width: 768px) {
-    .modalButton,
-    .modalButton:after {
+
+    .modal-button,
+    .modal-button:after {
         width: 200px;
         height: 86px;
         line-height: 88px;
