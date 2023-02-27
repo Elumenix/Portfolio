@@ -1,7 +1,7 @@
 "use strict";
 
 let body = document.querySelector("body");
-let skirmish = document.querySelector("#card-spaceway-skirmish");
+//let skirmish = document.querySelector("#card-spaceway-skirmish");
 let crossboa = document.querySelector("#card-crossboa");
 let modals = document.querySelectorAll(".modal");
 let projectCards = document.querySelectorAll(".project-card");
@@ -12,7 +12,7 @@ let currentModal;
 
 // Send each card to its respective page
 window.onload = () => {
-      skirmish.onclick = () => { window.location.href = "SpacewaySkirmish.html"; };
+      //skirmish.onclick = () => { window.location.href = "SpacewaySkirmish.html"; };
       crossboa.onclick = () => { window.location.href = "Crossboa.html"; };
 
       // Contact information
