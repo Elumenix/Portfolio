@@ -67,7 +67,7 @@ class Slideshow {
   }
 }
 
-window.onload = () => {
   const slideshow1 = new Slideshow(1, ".mySlides1", ".demo1", "#caption1", "#slides1");
   const slideshow2 = new Slideshow(1, ".mySlides2", ".demo2", "#caption2", "#slides2");
-}
+
+
