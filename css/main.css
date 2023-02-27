@@ -295,7 +295,7 @@ nav .button:last-child {
     margin-top: 1em;
 }
 
-#gamePlay {
+#gamePlay, #demo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -356,10 +356,18 @@ section:last-of-type {
     object-fit: cover;
 }
 
-.project-banner {
+.project-banner{
     height: 30rem;
     width: 100%;
     background-image: url('../media/placeholder.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#orbit {
+    object-fit: fill;
+    height: auto;
+    width: 100%;
     background-size: cover;
     background-position: center;
 }
