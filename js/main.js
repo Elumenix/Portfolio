@@ -1,26 +1,32 @@
 "use strict";
 
-let body = document.querySelector("body");
+
+
+let body;
 //let skirmish = document.querySelector("#card-spaceway-skirmish");
-let crossboa = document.querySelector("#card-crossboa");
-let modals = document.querySelectorAll(".modal");
-let projectCards = document.querySelectorAll(".project-card");
-let email = document.querySelector("#email");
-let linkedIn = document.querySelector("#linked");
+let crossboa;
+let modals;
+let projectCards;
+let email;
+let linkedIn;
 let currentModal;
 
+window.addEventListener('load', function () {
+      body = document.querySelector("body");
+      crossboa = document.querySelector("#card-crossboa");
+      modals = document.querySelectorAll(".modal");
+      projectCards = document.querySelectorAll(".project-card");
+      email = document.querySelector("#email");
+      linkedIn = document.querySelector("#linked");
 
-// Send each card to its respective page
-window.onload = () => {
-      //skirmish.onclick = () => { window.location.href = "SpacewaySkirmish.html"; };
-      crossboa.onclick = () => { window.location.href = "Crossboa.html"; };
+     
 
       // Contact information
       email.onclick = () => { window.location.href = "mailto:dps5393@rit.edu"; };
       linkedIn.onclick = () => { window.open("https://www.linkedin.com/in/donovanscullion/", '_blank'); };
-}
 
-// set up project card click events
+
+      // set up project card click events
 projectCards.forEach(card => card.onclick = e => {
       if (document.querySelector("#modal-" + card.id.substring(card.id.indexOf("-") + 1)) != null) {
             let modal = document.querySelector("#modal-" + card.id.substring(card.id.indexOf("-") + 1));
@@ -29,6 +35,8 @@ projectCards.forEach(card => card.onclick = e => {
             currentModal = modal;
       }
 });
+
+crossboa.onclick = () => { window.location.href = "/crossboa.html"; };
 
 // set up a way to close the modals
 for (let modal of modals) {
@@ -43,8 +51,10 @@ window.onclick = e => {
 };
 
 // closes a modal
-function closeModal(modal) {
+const closeModal = (modal) => {
       modal.style.display = "none";
       body.style.overflow = "scroll";
       currentModal = null;
 }
+
+});

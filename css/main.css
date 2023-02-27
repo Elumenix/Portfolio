@@ -285,7 +285,7 @@ nav .button:last-child {
 
 #pfp {
     height: 20em;
-    background-image: url('../media/profilepic.png');
+    background-image: url('../media/profile-pic.png');
     background-size: cover;
     background-position-x: center;
     background-position-y: top;

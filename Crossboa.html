@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <title>Crossboa</title>
-    <link rel='stylesheet' href='css/fonts.css'>
     <link rel='stylesheet' href='css/bootstrap-reboot.css'>
     <link rel='stylesheet' href='css/crossboa.css'>
     <script src="js/crossboa.js"></script>
@@ -16,11 +15,11 @@
 
     </header>
     <div id="wall"> </div>
-    <a href="/index.html" id="back" class="previous">&laquo; Back</a>
+    <a href="./index.html" id="back" class="previous">&laquo; Back</a>
     <main>
         <div id="opener">
             <h1>About</h1>
-            <img src="media/slimeDeath.PNG" id="slime"
+            <img src="media/slime-death.png" id="slime"
                 alt="Ah, yes. Slime. The favoured prey of a snake. Most of our assets were from itch.io, though not all of them were initially animated in a way that we liked. We made a few alterations here and there to get some satisfying results.">
             <p>Crossboa is a <strong>2d action roguelike</strong> that takes place within an ancient temple. Slithering
                 around in the forest, you've discovered an old temple deep within the trees. Within its walls was a
@@ -30,12 +29,13 @@
                 You can probably make it work.</p>
             <p>This game was created in the <strong>MonoGame</strong> engine, which is an offshoot of the
                 <strong>Xna</strong> framework. This project was made in a group of 4 people as part of an introductory
-                programming course for <strong>C#</strong>.</p>
+                programming course for <strong>C#</strong>.
+            </p>
             <p><strong>Timeframe:</strong> February 2022 - April 2022</p>
         </div>
 
         <h1>Development</h1>
-        <img src="media/ClassArchitecture.png" id="architecture"
+        <img src="media/class-architecture.png" id="architecture"
             alt="Our original idea was to have all objects be childs of the GameObject class, and then having system managers to help control them. This is essentially what ended up happening, but with a lot more managers and communication between classes.">
         <p>Our class architecture was well thought out, and really helped us in the early stages of the project. As this
             project started early in the course, we naturally learned about more features of both MonoGame and C++, so
@@ -55,7 +55,7 @@
 
 
 
-        <img src="media/StateMachine.png" id="states"
+        <img src="media/state-machine.png" id="states"
             alt="Deciding the game loop early on helped cut down on what could have been a lot of trial and error. I can only imagine the bugs we would have had to tackle. The Game Win Screen was eventually removed as the game became infinite, and functionality was added to go from the Pause Screen to the Main Menu.">
         <p>Figuring out how the game would actually work was an entirely separate challenge, though we quickly found
             that finite state machines were integral in keeping everything well organized. This applied to the core
@@ -72,7 +72,7 @@
             list-making and organization board. We kept track of what would need to be done over time, and could add or
             remove details as plans changed. Each of us could also claim ownership of a task, which prevented two people
             from working on the same thing. It made development of the game simple and efficient.</p>
-        <img src="media/Trello.PNG" id="trello"
+        <img src="media/trello.png" id="trello"
             alt="This is a screenshot of our Trello board post-development. It looked a lot crazier mid-develoopment.">
 
         <h1>Role</h1>
@@ -89,7 +89,8 @@
             within the game. This was a relatively simple process, with most of the work being optimizing files sizes.
             All music and sfx were pulled from and credited to users on Itch.io, with the exception of the title theme:
             <a href="#" id="ogg">Canopy Cacophony</a>, which I composed and edited myself. In addition to sound, I used
-            text files to save players settings after closing and reopening the game.</p>
+            text files to save players settings after closing and reopening the game.
+        </p>
         <div id="itchLink">
             <iframe src="https://itch.io/embed/1615747?linkback=true" width="552" height="167" frameborder="0"><a
                     href="https://tacnayn.itch.io/crossboa">Crossboa by TacNayn, Elumenix, sleop-deprivation,
@@ -103,7 +104,7 @@
         <span class="close">&times;</span>
         <div id="audio">
             <audio controls>
-                <source src="media/Canopy Cacophony.ogg" type="audio/ogg">
+                <source src="media/canopy-cacophony.ogg" type="audio/ogg">
                 Your browser does not support the audio element.
             </audio>
         </div>
