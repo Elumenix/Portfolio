@@ -197,7 +197,7 @@ nav>ul>li {
     transition: background-color .2s ease;
 }
 
-#shopGif {
+#shopGif, #death {
     width: 100%;
 }
 
@@ -411,7 +411,7 @@ section:last-of-type {
     .Split button {
         transform: translate(-40%);
     }
-    #shopGif {
+    #shopGif, #death {
         float:right;
         margin: 5px;
         width: 40%;
