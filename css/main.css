@@ -339,7 +339,7 @@ section:last-of-type {
     float: right;
     width: 50%;
     margin: 5px;
-    height: 167;
+    height: 167px;
     border: 0px;
 }
 
@@ -517,7 +517,6 @@ section:last-of-type {
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    -webkit-user-select: none;
 }
 
 /* Position the "next button" to the right */
@@ -581,7 +580,6 @@ section:last-of-type {
     outline: transparent;
     position: relative;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
 }
 

@@ -58,5 +58,5 @@ window.addEventListener('load', function () {
             modal.style.display = "none";
             body.style.overflow = "scroll";
             currentModal = null;
-      }
+      };
 });

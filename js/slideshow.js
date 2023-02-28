@@ -4,52 +4,45 @@ class Slideshow {
     this.slideClassName = slideClassName;
     this.dotClassName = dotClassName;
     this.captionId = captionId;
-    this.doit;
+    this.doit = null;
     this.showSlides(this.slideIndex);
-    document.querySelectorAll(`.prev` + btnClass).forEach((btn) => {
-      btn.onclick = () => this.plusSlides(-1);
+    document.querySelectorAll(`.prev${btnClass}`).forEach((btn) => {
+      btn.addEventListener('click', () => this.plusSlides(-1));
     });
-    document.querySelectorAll(`.next` + btnClass).forEach((btn) => {
-      btn.onclick = () => this.plusSlides(1);
+    document.querySelectorAll(`.next${btnClass}`).forEach((btn) => {
+      btn.addEventListener('click', () => this.plusSlides(1));
     });
-    let items = document.querySelectorAll(this.dotClassName);
-    let i;
-    for (i = 0; i < items.length - 1; i++) {
-      items[i].onclick = () => this.currentSlide(i + 1);
-    }
-    items[i].onclick = () => this.currentSlide(0);
-    window.onresize = () => {
+
+    window.addEventListener('resize', () => {
       clearTimeout(this.doit);
       this.doit = setTimeout(this.resizedw, 100);
-    };
+    });
   }
 
   plusSlides = (n) => {
     this.showSlides(this.slideIndex += n);
-  }
+  };
 
   currentSlide = (n) => {
     this.showSlides(this.slideIndex = n);
-  }
+  };
 
   showSlides = (n) => {
-    let i;
-    let slides = document.querySelectorAll(this.slideClassName);
-    let dots = document.querySelectorAll(this.dotClassName);
-    let captionText = document.querySelector(this.captionId);
+    const slides = document.querySelectorAll(this.slideClassName);
+    const dots = document.querySelectorAll(this.dotClassName);
+    const captionText = document.querySelector(this.captionId);
     if (n > slides.length) { this.slideIndex = 1 }
     if (n < 1) { this.slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("active");
     }
     slides[this.slideIndex - 1].style.display = "block";
-    slides[this.slideIndex - 1].style = "background-color:black";
+    slides[this.slideIndex - 1].style.backgroundColor = "black";
 
-
-    dots[this.slideIndex - 1].className += " active";
+    dots[this.slideIndex - 1].classList.add("active");
     if (this.slideIndex - 1 != 0) {
       // Keeps aspect ratio of image
       slides[this.slideIndex - 1].style.width = "auto";
@@ -60,7 +53,7 @@ class Slideshow {
       slides[0].style.display = "none";
     }
     captionText.innerHTML = dots[this.slideIndex - 1].alt;
-  }
+  };
 
   resizedw = () => {
     this.showSlides(this.slideIndex);
