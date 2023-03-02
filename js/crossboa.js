@@ -2,6 +2,7 @@ window.onload = () => {
   // Get the modal
   let modal = document.querySelector("#pop-modal");
   let musicModal = document.querySelector("#music-modal");
+  let song = document.querySelector("audio");
   let i;
 
   // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -29,6 +30,7 @@ window.onload = () => {
   const playAudio = () => {
     musicModal.style.display = "block";
   };
+  
 
   // Get the <span> element that closes the modal
   let span = document.querySelectorAll(".close");
@@ -38,6 +40,8 @@ window.onload = () => {
     span[i].onclick = () => {
       modal.style.display = "none";
       musicModal.style.display = "none";
+      song.pause();
+      song.currentTime = 0;
     };
   }
 

@@ -7,6 +7,13 @@ let projectCards;
 let email;
 let linkedIn;
 let currentModal;
+let videos;
+let confront;
+let green;
+let modalTitle
+const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+let interval = null;
+let iteration;
 
 window.addEventListener('load', function () {
       body = document.querySelector("body");
@@ -15,6 +22,11 @@ window.addEventListener('load', function () {
       projectCards = document.querySelectorAll(".project-card");
       email = document.querySelector("#email");
       linkedIn = document.querySelector("#linked");
+
+      // Prevent constant use of queryselector
+      videos = this.document.querySelectorAll("video");
+      let confront = this.document.querySelector("#modal-confrontation");
+      let green = this.document.querySelector("#modal-evergreen-escapades");
 
 
 
@@ -36,6 +48,37 @@ window.addEventListener('load', function () {
                   modal.style.display = "block";
                   body.style.overflow = "hidden";
                   currentModal = modal;
+
+                  modalTitle = currentModal.querySelector(".title");
+                  iteration = 0;
+
+                  this.clearInterval(interval)
+
+                  interval = setInterval(() => {
+                              modalTitle.innerText = modalTitle.innerText.split("").map((character, index) => {
+                                    if (index < iteration) {
+                                          return modalTitle.dataset.value[index];
+                                    }
+
+                                    return characters[Math.floor(Math.random() * 62)]
+                              }).join("");
+
+                              if (iteration >= modalTitle.dataset.value.length) {
+                                    this.clearInterval(interval);
+                              }
+
+                              iteration += 1 / 3;
+                        }, 30);
+
+
+                  if (currentModal == confront) {
+                        videos[2].play();
+                  }
+
+                  if (currentModal == green) {
+                        videos[0].play();
+                        videos[1].play();
+                  }
             }
       });
 
@@ -45,6 +88,8 @@ window.addEventListener('load', function () {
       for (let modal of modals) {
             modal.querySelector(".modal-close").onclick = () => closeModal(modal);
       }
+
+      // Closes modal if window is clicked on
       window.onclick = e => {
             for (let modal of modals) {
                   if (e.target == modal) {
@@ -58,5 +103,13 @@ window.addEventListener('load', function () {
             modal.style.display = "none";
             body.style.overflow = "scroll";
             currentModal = null;
+
+            // will pause and reset any videos that were playing
+            for (let v of videos) {
+                  if (v.paused == false) {
+                        v.pause();
+                        v.currentTime = 0;
+                  }
+            }
       };
 });
