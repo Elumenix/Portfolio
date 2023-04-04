@@ -58,6 +58,10 @@
             <section id='portfolio'>
                   <h2>Portfolio</h2>
                   <div class='gallery'>
+                        <div class='project-card' id='card-audio-sphere'>
+                              <h3>Audio Visualizer</h3>
+                              <img src='media/sphere.png' alt='Audio Visualizer screenshot'>
+                        </div>
                         <div class='project-card' id="card-confrontation">
                               <h3>Confrontation</h3>
                               <img src='media/confrontation.png' alt='Confrontation screenshot'>
@@ -119,11 +123,14 @@
                               <small>Note: As a group, we held limited individual roles and all took part in
                                     designing all aspects of the game.</small>
                               <ol>
-                                    <li><a href="https://www.linkedin.com/in/isabella-fox-1b53b887/" target="_blank">Isabella Fox</a>:
+                                    <li><a href="https://www.linkedin.com/in/isabella-fox-1b53b887/"
+                                                target="_blank">Isabella Fox</a>:
                                           Game Concept and Art Style</li>
-                                    <li><a href="https://www.linkedin.com/in/christopher-cabonilas-a31216228/" target="_blank">Christopher
+                                    <li><a href="https://www.linkedin.com/in/christopher-cabonilas-a31216228/"
+                                                target="_blank">Christopher
                                                 Cabonilas</a>: Rule Writing</li>
-                                    <li><a href="https://www.linkedin.com/in/zacharyrubin02/" target="_blank">Zachary Rubin</a>:
+                                    <li><a href="https://www.linkedin.com/in/zacharyrubin02/" target="_blank">Zachary
+                                                Rubin</a>:
                                           Mechanics</li>
                               </ol>
                         </div>
@@ -335,6 +342,46 @@
                                     <source src="media/attack.mp4" type="video/mp4">
                               </video>
                         </div>
+                  </div>
+
+            </div>
+      </div>
+      <div id="modal-audio-sphere" class="modal">
+            <div class="modal-content">
+                  <header>
+                        <div class="title-and-tagline">
+                              <span class="modal-close">x</span>
+                              <h1 data-value="Audio Visualizer" class="title">Audio Visualizer</h1>
+                        </div>
+                  </header>
+                  <div class="project-banner" style="background-image: url(media/sphere.png)"></div>
+                  <div class="main">
+
+                        <h4><strong>Status:</strong> In Development, Near-Completion </h4>
+                        <h4><strong>Time frame:</strong> March 2023</h4>
+                        <h4><strong>Engine Used:</strong> Canvas (JavaScript) </h4>
+
+                        <p>This is a work in progress audio visualizer that I went way above the requirements of for a
+                              school project. It was built using canvas with JavaScript, which essentially only gives me
+                              access to simplistic drawing functions. I've bundled and transpiled the project using NPM
+                              and Babel in the command line, so this visualizer should work using ES6 as well as ES5.
+                        </p>
+
+                        <p>The largest challenge of this project was of course making the sphere. It is an completely 2D
+                              object, I've essentially programmed a third dimension for it to act upon. It is completely
+                              made up of points, rather than arcs, and I rotate those points around the center of the
+                              object using trig functions. The color of the line changes as the z-values of the points
+                              become negative, and I use a spherical interpolation formula to add two point on each ring
+                              where z = 0 every frame in order to make that axis seem consistent. It was not an easy
+                              thing to figure out but it held my interests for long enough that I found a way to do it.
+                        </p>
+                        <p>This project is near completion. The only major areas of focus are cleaning up the UI to be
+                              more supportive of users and finding a better way to portray itself to users and let them
+                              choose their own music. I also wish to change how waveform data is displayed, as it comes
+                              across as a bit chaotic currently.</p>
+                        <br>
+                        <button type="button" class="modal-button" id="audio-link">Try
+                              It Here</button>
                   </div>
 
             </div>

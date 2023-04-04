@@ -616,6 +616,10 @@ section:last-of-type {
     content: 'Inspiration';
 }
 
+#audio-link.modal-button:after {
+    content: 'Audio';
+}
+
 .modal-button:hover:after {
     animation: 1s glitch;
     animation-timing-function: steps(2, end);
