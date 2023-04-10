@@ -15,7 +15,7 @@
       <header class='full-header'>
             <div class='title-and-tagline'>
                   <h1 class='title'>Donovan Scullion</h1>
-                  <p id='tag-line'><strong>Game Developer & Web Designer</strong></p>
+                  <p id='tag-line'><strong>Game/Software Developer & Web Designer</strong></p>
             </div>
             <nav>
                   <ul>
@@ -41,7 +41,10 @@
                         project, I am always eager to dive in and explore new possibilities.</p>
 
                   <p>I am a student at Rochester Institute of Technology, class of 2025, pursuing a BS in Game Design &
-                        Development.</p>
+                        Development. Through my coursework, I've learned aspects of design centered around user
+                        experience and understanding, which can be useful in any field. I've also been put through
+                        rigorous projects to help gain firm understanding of the more complex technical and programming
+                        skills which can be used to design the systems and mechanics of games and applications.</p>
 
                   <p>I am excited to continue developing my skills as a game designer and collaborating with other
                         creative professionals to bring new and innovative gaming experiences to players.</p>
@@ -57,43 +60,100 @@
             </section>
             <section id='portfolio'>
                   <h2>Portfolio</h2>
-                  <div class='gallery'>
-                        <div class='project-card' id='card-audio-sphere'>
-                              <h3>Audio Visualizer</h3>
-                              <img src='media/sphere.png' alt='Audio Visualizer screenshot'>
+                  <div id="portfolio-container">
+                        <h4>Games</h4>
+                        <div class='gallery'>
+                              <div class='project-card' id="card-confrontation">
+                                    <h3>Confrontation</h3>
+                                    <img src='media/confrontation.png' alt='Confrontation screenshot'>
+                              </div>
+                              <div class='project-card' id="card-crossboa">
+                                    <h3>Crossboa</h3>
+                                    <img src='media/crossboa-gameplay.png' alt='Crossboa screenshot'>
+                              </div>
+                              <div class='project-card' id="card-spaceway-skirmish">
+                                    <h3>Spaceway Skirmish</h3>
+                                    <img src='media/black-hole.png' alt='Spaceway Skirmish screenshot'>
+                              </div>
+                              <div class='project-card' id="card-artista">
+                                    <h3>Artista</h3>
+                                    <img src='media/artista-card.png' alt='Artista screenshot'>
+                              </div>
+                              <div class='project-card' id="card-evergreen-escapades">
+                                    <h3>Evergreen Escapades</h3>
+                                    <img src='media/creeping.png' alt='Evergreen Escapades screenshot'>
+                              </div>
                         </div>
-                        <div class='project-card' id="card-confrontation">
-                              <h3>Confrontation</h3>
-                              <img src='media/confrontation.png' alt='Confrontation screenshot'>
+
+                        <br>
+                        <h4>Level Design</h4>
+                        <div class='gallery'>
+                              <div class='project-card' id="hl2">
+                                    <h3>Half Life 2 WIP</h3>
+                                    <img src="media/hl2_hotel.png">
+                              </div>
+                              <div class='project-card' id="portal-2">
+                                    <h3>Deletion - Portal 2</h3>
+                                    <img src='media/placeholder.jpg'>
+                              </div>
+                              <div class='project-card' id="battleblock-theater">
+                                    <h3>Roundabout - BattleBlock Theater</h3>
+                                    <img src='media/placeholder.jpg'>
+                              </div>
                         </div>
-                        <div class='project-card' id="card-crossboa">
-                              <h3>Crossboa</h3>
-                              <img src='media/crossboa-gameplay.png' alt='Crossboa screenshot'>
-                        </div>
-                        <div class='project-card' id="card-portfolio">
-                              <h3>Portfolio Site</h3>
-                              <img src="media/profile-pic.png" alt="Profile Picture">
-                        </div>
-                        <div class='project-card' id="card-artista">
-                              <h3>Artista</h3>
-                              <img src='media/artista-card.png' alt='Artista screenshot'>
-                        </div>
-                        <div class='project-card' id="card-spaceway-skirmish">
-                              <h3>Spaceway Skirmish</h3>
-                              <img src='media/black-hole.png' alt='Spaceway Skirmish screenshot'>
-                        </div>
-                        <div class='project-card' id="card-ascii-generator">
-                              <h3>ASCII Generator</h3>
-                              <img src='media/celeste-ascii.png' alt='ASCII Generator screenshot'>
-                        </div>
-                        <div class='project-card' id="card-evergreen-escapades">
-                              <h3>Evergreen Escapades</h3>
-                              <img src='media/creeping.png' alt='Evergreen Escapades screenshot'>
+
+                        <br>
+                        <h4>Web Applications</h4>
+                        <div class='gallery'>
+                              <div class='project-card' id='card-audio-sphere'>
+                                    <h3>Audio Visualizer</h3>
+                                    <img src='media/sphere.png' alt='Audio Visualizer screenshot'>
+                              </div>
+                              <div class='project-card' id="card-portfolio">
+                                    <h3>Portfolio Site</h3>
+                                    <img src="media/profile-pic.png" alt="Profile Picture">
+                              </div>
+                              <div class='project-card' id="card-ascii-generator">
+                                    <h3>ASCII Generator</h3>
+                                    <img src='media/celeste-ascii.png' alt='ASCII Generator screenshot'>
+                              </div>
                         </div>
                   </div>
             </section>
       </main>
       <!--Modals-->
+      <div id="modal-hl2" class="modal">
+            <div class="modal-content">
+                  <header>
+                        <div class="title-and-tagline">
+                              <span class="modal-close">x</span>
+                              <h1 data-value="Half Life 2 Level" class="title">Half Life 2 Level</h1>
+                        </div>
+                  </header>
+                  <div class="project-banner" style="background-image: url(media/hl2_hotel.png)"></div>
+                  <div class="main">
+
+                        <h4><strong>Status:</strong> Early Development (As of 4/10/2023)</h4>
+                        <h4><strong>Time frame:</strong> April 2023</h4>
+                        <h4><strong>Editor:</strong> Hammer</h4>
+
+                        <p>This level is meant to be the final project for my level design course, which is meant to
+                              focus on aspects of first person shooter levels. My concept is that the level takes place
+                              in a hotel during the timeskip that takes place during the base game of Half Life 2. One
+                              of my personal goals for this level is to make the inside of the building feel internally
+                              consistent so that it feels like rooms exist even in parts of the building you don't have
+                              access to.
+                        </p>
+                        <p>A closer look at the mockup and more in-depth description at the core concept and areas can
+                              be read in the level pitch below.</p>
+                        <br>
+                        <button type="button" class="modal-button" id="hl2-link">Design
+                              Doc</button>
+                  </div>
+            </div>
+
+      </div>
+      </div>
       <div id="modal-artista" class="modal">
             <div class="modal-content">
                   <header>
@@ -247,7 +307,8 @@
                                     smaller resolutions.
                               </p>
                               <br>
-                              <button type="button" class="modal-button" id="ascii-link">Try
+                              <button type="button" class="modal-button" id="ascii-link"
+                                    href='media/donovan-scullion.pdf' target="_blank">Try
                                     It Here</button>
                         </div>
 

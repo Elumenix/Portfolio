@@ -40,8 +40,6 @@ window.addEventListener('load', function () {
       this.document.querySelector("#audio-link").onclick = () => { window.open("https://people.rit.edu/dps5393/audio/index.html", '_blank'); };
 
 
-
-
       // set up project card click events
       projectCards.forEach(card => card.onclick = e => {
             if (document.querySelector("#modal-" + card.id.substring(card.id.indexOf("-") + 1)) != null) {
@@ -56,20 +54,20 @@ window.addEventListener('load', function () {
                   this.clearInterval(interval)
 
                   interval = setInterval(() => {
-                              modalTitle.innerText = modalTitle.innerText.split("").map((character, index) => {
-                                    if (index < iteration) {
-                                          return modalTitle.dataset.value[index];
-                                    }
-
-                                    return characters[Math.floor(Math.random() * 62)]
-                              }).join("");
-
-                              if (iteration >= modalTitle.dataset.value.length) {
-                                    this.clearInterval(interval);
+                        modalTitle.innerText = modalTitle.innerText.split("").map((character, index) => {
+                              if (index < iteration) {
+                                    return modalTitle.dataset.value[index];
                               }
 
-                              iteration += 1 / 3;
-                        }, 30);
+                              return characters[Math.floor(Math.random() * 62)]
+                        }).join("");
+
+                        if (iteration >= modalTitle.dataset.value.length) {
+                              this.clearInterval(interval);
+                        }
+
+                        iteration += 1 / 3;
+                  }, 30);
 
 
                   if (currentModal == confront) {
