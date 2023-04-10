@@ -139,6 +139,7 @@ figcaption {
 
 .split {
     display: flex;
+    justify-content: space-around;
     padding: 1em;
 }
 
@@ -608,6 +609,19 @@ section:last-of-type {
     clip-path: var(--slice-0);
 }
 
+#modal-roundabout .modal-content .project-banner,
+#modal-hl2 .modal-content .project-banner {
+    min-height: 30rem;
+    height: auto;
+
+}
+
+#modal-roundabout .modal-content .project-banner img,
+#modal-hl2 .modal-content .project-banner img {
+    width: 100%;
+    opacity: 0;
+}
+
 #ascii-link.modal-button:after {
     content: 'ASCII';
 }
@@ -626,6 +640,16 @@ section:last-of-type {
 
 #hl2-link.modal-button:after {
     content: 'Documentation'
+}
+
+#roundabout-link.modal-button:after,
+#deletion-link.modal-button:after {
+    content: 'Play';
+}
+
+#roundabout-doc-link.modal-button:after,
+#deletion-doc-link.modal-button:after {
+    content: 'Watch';
 }
 
 .modal-button:hover:after {
@@ -690,12 +714,36 @@ section:last-of-type {
     }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     .modal-button,
     .modal-button:after {
         width: 200px;
         height: 86px;
         line-height: 88px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    #modal-roundabout .modal-content .split,
+    #modal-deletion .modal-content .split {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+
+
+    }
+
+    #modal-roundabout .modal-content .split #roundabout-analysis,
+    #modal-roundabout .modal-content .split #roundabout-steam,
+    #modal-deletion .modal-content .split #deletion-steam,
+    #modal-deletion .modal-content .split #deletion-analysis {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

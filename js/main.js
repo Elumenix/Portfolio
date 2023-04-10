@@ -38,6 +38,8 @@ window.addEventListener('load', function () {
       this.document.querySelector("#mood-board-link").onclick = () => { window.open("https://people.rit.edu/dps5393/235/project1/index.html", '_blank'); };
       this.document.querySelector("#ascii-link").onclick = () => { window.open("https://people.rit.edu/dps5393/235/Project2/project2.html", '_blank'); };
       this.document.querySelector("#audio-link").onclick = () => { window.open("https://people.rit.edu/dps5393/audio/index.html", '_blank'); };
+      this.document.querySelector("#roundabout-link").onclick = () => { window.open("https://steamcommunity.com/sharedfiles/filedetails/?id=2930119947", '_blank'); };
+      this.document.querySelector("#deletion-link").onclick = () => { window.open("https://steamcommunity.com/sharedfiles/filedetails/?id=2945646840", '_blank'); };
 
 
       // set up project card click events
