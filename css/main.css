@@ -626,6 +626,10 @@ section:last-of-type {
     content: 'ASCII';
 }
 
+#pupify-link.modal-button:after{
+    content:'Triple_Affirmative';
+}
+
 #artista-link.modal-button:after {
     content: 'Sanity';
 }
