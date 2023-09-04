@@ -201,8 +201,14 @@ nav>ul>li {
 }
 
 #shop-gif,
-#death {
+#death,
+#hallway,
+#ballroom {
     width: 100%;
+}
+
+#hl2_images {
+    display: flex;
 }
 
 .button:link,
@@ -436,6 +442,11 @@ section:last-of-type {
         margin: 5px;
         width: 40%;
     }
+    #hotel-links {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 50%;
+    }
 
     .homepage-main {
         display: grid;
@@ -626,8 +637,8 @@ section:last-of-type {
     content: 'ASCII';
 }
 
-#pupify-link.modal-button:after{
-    content:'Triple_Affirmative';
+#pupify-link.modal-button:after {
+    content: 'Triple_Affirmative';
 }
 
 #artista-link.modal-button:after {
@@ -644,6 +655,14 @@ section:last-of-type {
 
 #hl2-link.modal-button:after {
     content: 'Documentation'
+}
+#hl2-maplink.modal-button:after {
+    content: 'Hotel'
+}
+
+#hotel-links {
+    display: flex;
+    justify-content: space-between;
 }
 
 #roundabout-link.modal-button:after,
@@ -726,6 +745,7 @@ section:last-of-type {
         height: 86px;
         line-height: 88px;
     }
+    
 }
 
 @media screen and (max-width: 1000px) {
@@ -737,9 +757,8 @@ section:last-of-type {
         flex-direction: column;
         align-items: center;
         align-content: center;
-
-
     }
+    
 
     #modal-roundabout .modal-content .split #roundabout-analysis,
     #modal-roundabout .modal-content .split #roundabout-steam,
